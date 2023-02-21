@@ -1,0 +1,5 @@
+../Tutorial_3/
+.idea/
+*.o
+*.exe
+/jeopardy/jeopardy
