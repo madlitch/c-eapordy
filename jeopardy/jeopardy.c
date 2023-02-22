@@ -19,6 +19,7 @@
 // Put macros or constants here using #define
 #define BUFFER_LEN 256
 #define NUM_PLAYERS 4
+extern question questions[NUM_QUESTIONS];
 
 // Put global environment variables here
 

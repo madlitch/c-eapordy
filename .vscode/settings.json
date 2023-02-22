@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.sh": "shellscript",
+        "questions.h": "c",
+        "jeopardy.h": "c"
+    }
+}
