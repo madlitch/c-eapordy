@@ -23,7 +23,7 @@
 static char categories[NUM_CATEGORIES][MAX_LEN] = {
         "nature",
         "sports",
-        "food and drink"
+        "nutrition"
 };
 
 // Questions struct for each question

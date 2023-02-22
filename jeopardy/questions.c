@@ -62,25 +62,25 @@ void initialize_game(void) {
     questions[7].value = 400;
     questions[7].answered = false;
 
-    strcpy(questions[8].category, "food and drink");
+    strcpy(questions[8].category, "nutrition");
     strcpy(questions[8].question, "Beans & oatmeal (not necessarily together) are good sources of this substance that helps food pass through the body?");
     strcpy(questions[8].answer, "fibre");
     questions[8].value = 100;
     questions[8].answered = false;
 
-    strcpy(questions[9].category, "food and drink");
+    strcpy(questions[9].category, "nutrition");
     strcpy(questions[9].question, "It is not for children, it can be red or white ");
     strcpy(questions[9].answer, "wine");
     questions[9].value = 200;
     questions[9].answered = false;
 
-    strcpy(questions[10].category, "food and drink");
+    strcpy(questions[10].category, "nutrition");
     strcpy(questions[10].question, "It is meat from a cow?");
     strcpy(questions[10].answer, "steak");
     questions[10].value = 300;
     questions[10].answered = false;
 
-    strcpy(questions[11].category, "food and drink");
+    strcpy(questions[11].category, "nutrition");
     strcpy(questions[11].question, "You can look through it, we should drink it every day, it is healthy?");
     strcpy(questions[11].answer, "water");
     questions[11].value = 400;
