@@ -1,7 +1,10 @@
 /*
- * Tutorial 4 Jeopardy Project for SOFE 3950U: Operating Systems
+ * Tutorial 4 Jeopardy Project for SOFE 3950U Operating Systems
  *
- * Copyright (C) 2015, <GROUP MEMBERS>
+ * Massimo Albanese 100616057
+ * Lyba Mughees 100750490
+ * Daanyaal Tahir 100746644
+ * Malaika Sharif 100651617
  * All rights reserved.
  *
  */
@@ -12,17 +15,11 @@
 
 #define MAX_LEN 512
 
-// Player struct for each player
 typedef struct {
     char name[MAX_LEN];
     int score;
 } player;
 
-// Returns true if the player name matches one of the existing players
-extern bool player_exists(player *players, int num_players, char *name);
-
-// Go through the list of players and update the score for the 
-// player given their name
 extern void update_score(player *players, int num_players, char *name, int score);
 
-#endif /* PLAYERS_H_ */
+#endif

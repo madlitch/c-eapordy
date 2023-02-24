@@ -1,7 +1,10 @@
 /*
- * Tutorial 4 Jeopardy Project for SOFE 3950U: Operating Systems
+ * Tutorial 4 Jeopardy Project for SOFE 3950U Operating Systems
  *
- * Copyright (C) 2015, <GROUP MEMBERS>
+ * Massimo Albanese 100616057
+ * Lyba Mughees 100750490
+ * Daanyaal Tahir 100746644
+ * Malaika Sharif 100651617
  * All rights reserved.
  *
  */
@@ -9,11 +12,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "questions.h"
+
 question questions[NUM_QUESTIONS];
+
 // Initializes the array of questions for the game
 void initialize_game(void) {
     // initialize each question struct and assign it to the questions array
-//    q1
     strcpy(questions[0].category, "nature");
     strcpy(questions[0].question, "How many oceans are there?");
     strcpy(questions[0].answer, "5");

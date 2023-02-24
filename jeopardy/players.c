@@ -1,7 +1,10 @@
 /*
- * Tutorial 4 Jeopardy Project for SOFE 3950U: Operating Systems
+ * Tutorial 4 Jeopardy Project for SOFE 3950U Operating Systems
  *
- * Copyright (C) 2015, <GROUP MEMBERS>
+ * Massimo Albanese 100616057
+ * Lyba Mughees 100750490
+ * Daanyaal Tahir 100746644
+ * Malaika Sharif 100651617
  * All rights reserved.
  *
  */

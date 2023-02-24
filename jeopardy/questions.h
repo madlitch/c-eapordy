@@ -1,7 +1,10 @@
 /*
- * Tutorial 4 Jeopardy Project for SOFE 3950U: Operating Systems
+ * Tutorial 4 Jeopardy Project for SOFE 3950U Operating Systems
  *
- * Copyright (C) 2015, <GROUP MEMBERS>
+ * Massimo Albanese 100616057
+ * Lyba Mughees 100750490
+ * Daanyaal Tahir 100746644
+ * Malaika Sharif 100651617
  * All rights reserved.
  *
  */
@@ -10,14 +13,9 @@
 
 #include <stdbool.h>
 
-
 #define MAX_LEN 512
 #define NUM_CATEGORIES 3
-// The number of questions, you can use this in your functions in
-// questions.c, this can be accessed in questions.c
 #define NUM_QUESTIONS 12
-
-
 
 // List of 3 categories as array of strings
 static char categories[NUM_CATEGORIES][MAX_LEN] = {
