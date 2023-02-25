@@ -43,34 +43,37 @@ int main(int argc, char *argv[]) {
     char answer[MAX_LEN];
     char input[MAX_LEN];
     int value = 0;
-    int questions_answered = 12;
+    int questions_answered = 0;
 
     initialize_game();
+    printf("\n====== Welcome to Jeopardy ======\n");
 
-    printf("Enter your names:\n");
+    printf("\nEnter your names:\n");
 
-    //     initialize each of the players in the array
+    // initialize each of the players in the array
     for (int i = 0; i < NUM_PLAYERS; i++) {
-        printf("Player %d/%d: ", i + 1, NUM_PLAYERS);
+        printf(" Player %d/%d: ", i + 1, NUM_PLAYERS);
         scanf("%s", players[i].name);
         update_score(players, NUM_PLAYERS, players[i].name, 0);
     }
+
+    fflush(stdin);
 
     while (questions_answered < NUM_QUESTIONS) {
         for (int i = 0; i < NUM_PLAYERS; i++) {
             // Call functions from the questions and players source files
             display_categories();
             start:
-            printf("%s, enter a category, then the value\n", players[i].name);
+            printf("\n%s, enter a category, then the value\n", players[i].name);
             fgets(input, MAX_LEN, stdin);
             tokenize(input, tokens);
 
             strcpy(category, tokens[0]);
             value = atoi(tokens[1]);
 
-//            check if question either doesn't exist or is already answered
+            // check if question either doesn't exist or is already answered
             if (invalid_question(category, value)) {
-                printf("Already answered/Doesn't exist!\n");
+                printf("\nAlready answered/Doesn't exist!\n");
                 goto start;
             }
 
@@ -83,10 +86,10 @@ int main(int argc, char *argv[]) {
             answer[strcspn(answer, "\n")] = 0;
 
             if (valid_answer(category, value, answer)) {
-                printf("That's right! You get %d points!\n", value);
+                printf("\nThat's right! You get %d points!\n", value);
                 update_score(players, NUM_PLAYERS, players[i].name, players[i].score + value);
             } else {
-                printf("Sorry, the answer is '%s'!\n", question_answer(category, value));
+                printf("\nSorry, the answer is '%s'!\n", question_answer(category, value));
             }
 
             answer_question(category, value);

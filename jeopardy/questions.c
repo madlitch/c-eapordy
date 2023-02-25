@@ -104,17 +104,11 @@ void display_categories(void) {
         }
     }
 
-    printf("---------------------------JEOPARDY---------------------------\n");
-    printf("  %s    |  %s  |  \t%s  \n", categories[0], categories[1], categories[2]);
-    printf("--------------------------------------------------------------\n");
-    printf("      %s  |  \t%s  |  \t%s  \n", question_values[0], question_values[4], question_values[8]);
-    printf("--------------------------------------------------------------\n");
-    printf("      %s  |  \t%s  |  \t%s  \n", question_values[1], question_values[5], question_values[9]);
-    printf("--------------------------------------------------------------\n");
-    printf("      %s  |  \t%s  |  \t%s  \n", question_values[2], question_values[6], question_values[10]);
-    printf("--------------------------------------------------------------\n");
-    printf("      %s  |  \t%s  |  \t%s  \n", question_values[3], question_values[7], question_values[11]);
-    printf("--------------------------------------------------------------\n");
+    printf("\n|%-10s|%-10s|%-10s|\n", categories[0], categories[1], categories[2]);
+    printf("|%-10s|%-10s|%-10s|\n", question_values[0], question_values[4], question_values[8]);
+    printf("|%-10s|%-10s|%-10s|\n", question_values[1], question_values[5], question_values[9]);
+    printf("|%-10s|%-10s|%-10s|\n", question_values[2], question_values[6], question_values[10]);
+    printf("|%-10s|%-10s|%-10s|\n\n", question_values[3], question_values[7], question_values[11]);
 }
 
 // Displays the question for the category and dollar value
